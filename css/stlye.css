@@ -1,0 +1,34 @@
+.btn {
+    width: 400px;
+    height: 37px;
+    background-color: skyblue;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    /* Add multiple transitions for smooth effects */
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.btn:hover {
+    transform: translateY(-5px) rotate(5deg);
+    background-color: #ff6b6b;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+.btn:active {
+    transform: translateY(2px);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+@keyframes logo-bounce {
+  0%   { transform: translateY(0) rotate(0deg); }
+  50%  { transform: translateY(-6px) rotate(-4deg); }
+  100% { transform: translateY(0) rotate(0deg); }
+}
+
+.navbar-brand img {
+  transform-origin: center;
+  animation: logo-bounce 3s ease-in-out infinite;
+}
+

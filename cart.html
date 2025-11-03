@@ -1,0 +1,292 @@
+  
+ 
+    <!doctype html>
+    <html lang="en">
+                <head >
+                    <meta charset="utf-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <title>Starbucks</title>
+                    
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+                    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+                  </head>
+                  <body class="bg-dark">
+<!-- nav -->
+<section>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary p-3" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand " href="index.html">
+        <img src="image/logo-modified.png" alt="Logo" width="70" height="66">
+         Starbucks
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-white" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html"><i class="bi bi-house"> HOME</i></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="products.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-cup-hot"> PRODUCTS</i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="prod1.html">Cold Tea</a></li>
+              <li><a class="dropdown-item" href="prod2.html">Hot Tea</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cart.html"><i class="bi bi-cart4"> CART</i></a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link" href="About_us.html"><i class="bi bi-people"> ABOUT US</i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacts.html"><i class="bi bi-person-lines-fill"> CONTACT US</i></a>
+          </li>
+        </ul>
+        <div class=" d-flex ms-auto">
+          <a class="nav-link text-white" href="login.html"><i class="bi bi-person-circle"> LOGIN</i></a>
+          <a class="nav-link text-white px-3" href="register.html"><i class="bi bi-person-add"> REGISTER</i></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</section>
+<!-- nav end -->  
+ <!-- content -->
+                  <section>
+                    <div class="container my-5 pb-5">
+                      <div class="row justify-content-center">
+                        <div class="col-md-8">
+                          <div class="card">
+                            <div class="card-header bg-success text-white">
+                              <h4 class="mb-0">Shopping Cart</h4>
+                            </div>
+                            <div class="card-body">
+                              <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Product</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">Quantity</th>
+                                    <th scope="col">Total</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>Iced Pumpkin Cream Chai</td>
+                                    <td>$4.75</td>
+                                    <td>1</td>
+                                    <td>$4.75</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Iced Pumpkin Spice Latte</td>
+                                    <td>$5.25</td>
+                                    <td>2</td>
+                                    <td>$10.50</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Iced Caffe Latte</td>
+                                    <td>$4.25</td>
+                                    <td>1</td>
+                                    <td>$4.25</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <div class="d-flex justify-content-end">
+                                <h5>Total: $19.50</h5>
+                              </div>
+                              <div class="d-flex justify-content-end mt-3">
+                                <button class="btn btn-primary btn-success me-2" data-bs-toggle="modal" data-bs-target="#out">Checkout</button>
+                                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#continue">Continue Shopping</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+<!-- content end -->
+
+ <!-- modal -->
+  <section>
+          <div class="modal" id="continue" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Continue Shopping</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Pick which menu you want to continue.</p>
+                </div>
+                <div class="modal-footer">
+                  <a href="prod2.html"><button type="button" class="btn btn-primary btn-danger" data-bs-toggle="modal">Hot Tea</button></a>
+                  <a href="prod1.html"><button type="button" class="btn btn-secondary btn-info" data-bs-toggle="modal">Cold Tea</button></a>
+                </div>
+              </div>
+            </div>
+          </div>  
+          </section>
+<!-- modal end -->
+
+ <!-- modal -->
+  <section> 
+          <div class="modal" tabindex="-1" id="out">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Checkout?</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Are you sure this is all you want to Buy?</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal">YES</button>
+                  <button type="button" class="btn btn-secondary" data-bs-toggle="modal" aria-label="Close">NO</button>
+                </div>
+              </div>
+            </div>
+          </div>  
+          </section>
+<!-- modal end -->
+ 
+
+<!-- Footer -->
+                    <section>
+                      <footer
+                              class="text-center text-lg-start text-white"
+                              style="background-color: #111611"
+                              >
+                        <!-- Grid container -->
+                        <div class="container p-4 pb-0">
+                          <!-- Section: Links -->
+                          <section class="">
+                            <!--Grid row-->
+                            <div class="row">
+                              <!-- Grid column -->
+                              <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                                <h6 class="text-uppercase mb-4 font-weight-bold">
+                                  Starbucks
+                                </h6>
+                                <p>
+                                  Free refills of hot and iced brewed coffee and tea during same store visit.
+                                   Excludes Cold Brew, Nitro Cold Brew, Iced Tea Lemonade, and flavored Iced Tea and Starbucks Refreshers® base.
+                                   At participating stores.
+                                </p>
+                              </div>
+                              <!-- Grid column -->
+
+                              <hr class="w-100 clearfix d-md-none" />
+
+                              <!-- Grid column -->
+                              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                                <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+                                <p>
+                                  <a class="text-white" href="prod2.html">Hot Tea</a>
+                                </p>
+                                <p>
+                                  <a class="text-white" href="prod1.html">Cold Tea</a>
+                                </p>
+                              </div>
+                              <!-- Grid column -->
+
+                              <hr class="w-100 clearfix d-md-none" />
+
+                              <!-- Grid column -->
+                              <hr class="w-100 clearfix d-md-none" />
+
+                              <!-- Grid column -->
+                              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                                <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                                <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+                                <p><i class="fas fa-envelope mr-3"></i> press@starbucks.com</p>
+                                <p><i class="fas fa-phone mr-3"></i> 206 318 7100</p>
+                                <p><i class="fas fa-print mr-3"></i> +44 20 3047 2656</p>
+                              </div>
+                              <!-- Grid column -->
+
+                              <!-- Grid column -->
+                              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                                <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
+
+                                <!-- Facebook -->
+                                <a 
+                                  class="btn btn-primary btn-floating m-1"
+                                  style="background-color: #3b5998"
+                                  href="https://www.facebook.com/Starbucks" 
+                                  target="_blank"
+                                  role="button"
+                                  ><i class="bi bi-facebook"></i></a>
+
+                                <!-- Twitter -->
+                                <a
+                                  class="btn btn-primary btn-floating m-1"
+                                  style="background-color: #000000"
+                                  href="https://x.com/starbucks/"
+                                  target="_blank"
+                                  role="button"
+                                  ><i class="bi bi-twitter-x"></i></a>
+
+                                <!-- Instagram -->
+                                <a
+                                  class="btn btn-primary btn-floating m-1"
+                                  style="background-color: #ac2bac"
+                                  href="https://www.instagram.com/starbucks/"
+                                  target="_blank"
+                                  role="button"
+                                  ><i class="bi bi-threads"></i></a>
+
+                                <!-- Youtube -->
+                                <a
+                                  class="btn btn-primary btn-floating m-1"
+                                  style="background-color: #a30000"
+                                  href="https://www.youtube.com/starbucks"
+                                  target="_blank"
+                                  role="button"
+                                  ><i class="bi bi-youtube"></i></a>
+
+                                <!-- pintress -->
+                                <a
+                                  class="btn btn-primary btn-floating m-1"
+                                  style="background-color: #a30000"
+                                  href="https://www.pinterest.com/starbucks/"
+                                  target="_blank"
+                                  role="button"
+                                  ><i class="bi bi-pinterest"></i></a>
+
+                                   <!-- Spotify -->
+                                <a
+                                  class="btn btn-primary btn-floating m-1"
+                                  style="background-color: #20252b"
+                                  href="https://open.spotify.com/user/starbucks"
+                                  target="_blank"
+                                  role="button"
+                                  ><i class="bi bi-spotify"></i></a>
+                              </div>
+                            </div>
+                            <!--Grid row-->
+                          </section>
+                          <!-- Section: Links -->
+                        </div>
+                        <!-- Grid container -->
+
+                        <!-- Copyright -->
+                        <div
+                            class="text-center p-3"
+                            style="background-color: #111611"
+                            >
+                         <a> © 2025 Copyright Starbucks Coffee Company. All rights reserved</a>
+                        </div>
+                        <!-- Copyright -->
+                      </footer> 
+                    <!-- End of .container -->
+                    </section>
+<!-- End Footer -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>                
+        </body>
+    </html>
+
