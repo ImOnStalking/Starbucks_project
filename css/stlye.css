@@ -1,13 +1,19 @@
 .btn {
+    /* Keep existing properties */
     width: 400px;
     height: 37px;
     background-color: skyblue;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    /* Add multiple transitions for smooth effects */
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    
+    /* Add flexbox properties */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px; /* For spacing between any child elements */
 }
 
 .btn:hover {
@@ -30,5 +36,24 @@
 .navbar-brand img {
   transform-origin: center;
   animation: logo-bounce 3s ease-in-out infinite;
+}
+
+/* Add media query for mobile devices */
+@media screen and (max-width: 768px) {
+    .btn {
+        width: 100%; /* Make button full width on mobile */
+        transform: none !important; /* Prevent rotation on mobile */
+    }
+    
+    .btn:hover {
+        transform: none !important;
+        background-color: skyblue; /* Keep original color on mobile */
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    
+    .btn:active {
+        transform: translateY(1px) !important; /* Subtle feedback on tap */
+        box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    }
 }
 
